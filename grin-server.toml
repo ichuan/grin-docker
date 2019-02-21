@@ -127,7 +127,7 @@ max_pool_size = 50000
 max_stempool_size = 50000
 
 #maximum total weight of transactions that can get selected to build a block
-mineable_max_weight = 39976
+mineable_max_weight = 40000
 
 
 #########################################
@@ -188,7 +188,7 @@ stdout_log_level = "Warning"
 log_to_file = true
 
 #log level for file: Error, Warning, Info, Debug, Trace
-file_log_level = "Debug"
+file_log_level = "Info"
 
 #log file path
 log_file_path = "/opt/coin/server.log"

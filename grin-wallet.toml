@@ -14,14 +14,16 @@ chain_type = "Mainnet"
 #host IP for wallet listener, change to "0.0.0.0" to receive grins
 api_listen_interface = "0.0.0.0"
 
-#port for wallet listener
-
 #path of TLS certificate file, self-signed certificates are not supported
 #tls_certificate_file = ""
 #private key for the TLS certificate
 #tls_certificate_key = ""
 
+#port for wallet listener
 api_listen_port = 3415
+
+#port for wallet owner api
+owner_api_listen_port = 13420
 
 #path of the secret token used by the API to authenticate the calls
 #comment it to disable basic auth
@@ -71,7 +73,7 @@ stdout_log_level = "Warning"
 log_to_file = true
 
 #log level for file: Error, Warning, Info, Debug, Trace
-file_log_level = "Debug"
+file_log_level = "Info"
 
 #log file path
 log_file_path = "/opt/coin/wallet.log"
