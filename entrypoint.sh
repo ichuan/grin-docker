@@ -11,7 +11,7 @@ if test $# -eq 0; then
     echo -e 'word\nword\n' | /opt/grin wallet init > /opt/coin/wallet/init.txt
   }
   # start node
-  /opt/grin server start
+  /opt/grin server run &
   # wallet api
   exec /opt/grin wallet --pass word owner_api
 else
