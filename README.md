@@ -23,19 +23,10 @@ mkdir data
 docker run --rm -itd --name igrin --network host -v `pwd`/data:/opt/coin grin
 ```
 
-## Persist data
-
-By using [CWSpear/local-persist](https://github.com/CWSpear/local-persist):
-
-```
-curl -fsSL https://raw.githubusercontent.com/CWSpear/local-persist/master/scripts/install.sh | sudo bash
-docker volume create -d local-persist -o mountpoint=/data/grin-data --name=grin-data
-```
-
 ## Using pre-built docker image
 
 Using automated build image from <https://hub.docker.com/r/mixhq/grin/>:
 
 ```
-docker run --rm -itd --name igrin --network host -v grin-data:/opt/coin mixhq/grin
+docker run --rm -itd --name igrin --network host -v `pwd`/data:/opt/coin mixhq/grin
 ```
